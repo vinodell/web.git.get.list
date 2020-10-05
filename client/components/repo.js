@@ -1,6 +1,13 @@
 import React from 'react'
 import { Link, useParams } from 'react-router-dom'
+// import axios from 'axios'
 import Head from './head'
+
+// const getList = () => {
+//   const [value, setValue] = useState([])
+//   axios(`https://api.github.com/users/${repo}/repos`)
+//   .then(it => setValue(it.data)
+// }
 
 const Repo = () => {
   const { repo } = useParams()
