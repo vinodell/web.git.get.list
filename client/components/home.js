@@ -13,8 +13,8 @@ const Home = () => {
         <div className="bg-indigo-800 text-white font-bold rounded-lg border shadow-lg p-10">
           <Switch>
             <Route exact path="/first/" component={() => <First />} />
-            <Route exact path="/first/:username" component={() => <Repo />} />
-            <Route exact path="/first/:username/:text" component={() => <Text />} />
+            <Route exact path="/first/:repo" component={() => <Repo />} />
+            <Route exact path="/first/:repo/:text" component={() => <Text />} />
           </Switch>
         </div>
       </div>
