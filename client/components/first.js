@@ -27,17 +27,17 @@ const First = () => {
             id="search-button"
             type="button"
             onClick={() => {
-            history={lol}
-           }}
+              history = { lol }
+            }}
           >
-            <Link to={`/first/${repo}`}>search</Link>
+            <Link to={`/first/${repo}`}> search</Link>
           </button>
         </div>
       </div>
     </div>
   )
 }
-// <Link to={`/first/${repo}`}>search</Link>
+
 First.propTypes = {}
 
 export default First

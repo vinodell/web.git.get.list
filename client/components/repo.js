@@ -9,14 +9,14 @@ const Repo = () => {
   useEffect(() => {
     axios(`https://api.github.com/users/${repo}/repos`).then((it) => getUser(it.data))
     return () => {}
-  },[])
+  }, [])
   return (
     <div>
       <Head title="Hello" />
       <div>
         <div id="repository-name">{repo}:</div>
         <Link id="go-back" to="/first">
-        back
+          back
         </Link>
       </div>
       <div className="flex items-center justify-center h-screen">
